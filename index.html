@@ -108,6 +108,17 @@ footer b{color:#fff}
 .toast.on{transform:translateX(-50%) translateY(0)}
 .flotante{position:fixed;right:16px;bottom:16px;z-index:8;width:58px;height:58px;border-radius:50%;background:#25d366;
   display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.4);border:0;cursor:pointer}
+
+/* EVIDENCIA OFICIAL */
+.evid h2{margin-bottom:6px}
+.evid .intro{color:var(--suave);margin-bottom:16px}
+.post{background:#fff;border-radius:18px;padding:6px;margin-bottom:18px;overflow:hidden;min-height:120px}
+.post .etq{display:flex;align-items:center;gap:8px;background:var(--verde2);color:#fff;border-radius:12px;
+  padding:10px 12px;font-weight:800;font-size:.9rem;margin-bottom:4px}
+.post .etq i{font-style:normal;background:var(--amarillo);color:#14281d;border-radius:6px;padding:2px 7px;font-size:.75rem}
+.post blockquote{margin:0 auto!important;color:#14281d;padding:14px;font-size:.95rem}
+.post blockquote a{color:var(--azul);font-weight:800}
+.post .twitter-tweet{margin:0 auto!important}
 @media(min-width:620px){.grid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
@@ -125,6 +136,30 @@ footer b{color:#fff}
 </header>
 
 <main class="wrap">
+
+  <section class="evid">
+    <h2>Así fue el <span>operativo</span></h2>
+    <p class="intro">Fotos y videos reales publicados por la Policía Nacional y la Presidencia de la República.</p>
+    <div class="post">
+      <div class="etq"><i>VIDEO</i>Policía Nacional de Colombia</div>
+      <blockquote class="twitter-tweet" data-lang="es" data-dnt="true" data-align="center">
+        <p lang="es" dir="ltr">En el puerto de Cartagena, la Policía Antinarcóticos incautó 7,6 toneladas de cocaína, la mayor incautación de los últimos 10 años en este puerto.</p>&mdash; Policía de Colombia (@PoliciaColombia) <a href="https://twitter.com/PoliciaColombia/status/2112318040960389388">19 de octubre de 2026</a>
+      </blockquote>
+    </div>
+    <div class="post">
+      <div class="etq"><i>FOTOS</i>Presidente de la República · el anuncio</div>
+      <blockquote class="twitter-tweet" data-lang="es" data-dnt="true" data-align="center">
+        <p lang="es" dir="ltr">¡Golpe histórico al narcotráfico en Cartagena! 7,6 toneladas de cocaína incautadas.</p>&mdash; Abelardo de la Espriella (@ABDELAESPRIELLA) <a href="https://twitter.com/ABDELAESPRIELLA/status/2112273652804644941">19 de octubre de 2026</a>
+      </blockquote>
+    </div>
+    <div class="post">
+      <div class="etq"><i>VIDEO</i>Presidente de la República · desde Cartagena</div>
+      <blockquote class="twitter-tweet" data-lang="es" data-dnt="true" data-align="center">
+        <p lang="es" dir="ltr">Compatriotas, la Policía Nacional ha dado un golpe histórico al narcoterrorismo: 7,6 toneladas de cocaína incautadas en el puerto de Cartagena.</p>&mdash; Abelardo de la Espriella (@ABDELAESPRIELLA) <a href="https://twitter.com/ABDELAESPRIELLA/status/2112600531226993095">20 de octubre de 2026</a>
+      </blockquote>
+    </div>
+    <p style="color:var(--suave);font-size:.82rem">Si no ves los videos, toca el enlace de cada publicación para abrirla en X.</p>
+  </section>
 
   <section>
     <h2>Las <span>cifras</span></h2>
@@ -268,5 +303,6 @@ document.getElementById('copy').onclick=function(){
 // PWA
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
 </script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
