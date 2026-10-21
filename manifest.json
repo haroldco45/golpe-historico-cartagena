@@ -1,0 +1,14 @@
+{
+  "name": "Golpe Histórico al Narcotráfico — Cartagena",
+  "short_name": "Golpe Histórico",
+  "description": "7,6 toneladas de cocaína incautadas en Cartagena. Colombia firme contra el narcoterrorismo.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b2a1f",
+  "theme_color": "#0b2a1f",
+  "lang": "es-CO",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
